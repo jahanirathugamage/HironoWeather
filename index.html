@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!--Google Fonts and Icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Hirono Weather</title>
+</head>
+<body>
+
+    <main class="main-container">
+        <header>
+            <div>
+                <h5 class="header-txt"></h5>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    signal_cellular_alt
+                </span>
+
+                <span class="material-symbols-outlined">
+                    wifi
+                </span>
+
+                <span class="material-symbols-outlined">
+                    battery_low
+                </span>
+
+            </div>
+        </header>
+
+        <section class="input-container"> 
+            <input type="text" class="city-input" placeholder="Search City">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </section>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-summary-container">
+                <h2 class="country-txt bold-txt">london</h2>
+                <h5 class="current-date-txt regular-txt">Wed, 08 Aug</h5>
+                <h4 class="condition-txt grey-txt bold-txt">Rain</h4>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="assets/hirono/rain.png" alt="weather summary" class="weather-summary-img">
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        umbrella
+                    </span>
+                    <div class="condition-info" title="Chances of rain">
+                        <h5 class="rain-value-txt">50</h5><h6 class="regular-txt">%</h6>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="condition-info" title="Wind Speed">
+                        <h5 class="wind-value-txt">4.4</h5><h6 class="regular-txt">m/s</h6>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="condition-info" title="Humidity">
+                        <h5 class="humidity-value-txt">75</h5><h6 class="regular-txt">%</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                
+            </div>
+        </section>
+
+        <!--The city specific weather search message to search a city-->
+        <section class="search-city section-message">
+            <img src="assets/hirono/search.png" alt="search city">
+            <div>
+                <h3>Hello there!</h3>
+                <h4 class="regular-txt">Hirono will help you find the forecast for any city!</h4>
+            </div>
+        </section>
+
+        <!-- The city specific weather search message for not found -->
+        <section class="not-found section-message" style="display: none;">
+            <img class="message-img" src="assets/hirono/not-found.png" alt="search city">
+            <div>
+                <h3>Oops! An error?</h3>
+                <h4 class="regular-txt">It seems like Hirono will need you to try again!</h4>
+            </div>
+        </section>
+        <h6 class="footer-note regular-txt">Copyright © 2025 yoneighbourhoodboba. All rights reserved.</h6>
+    </main>
+</body>
+</html>
